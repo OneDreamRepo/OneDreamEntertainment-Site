@@ -11,15 +11,171 @@ html {
     padding: 0;
   
   } 
-
-
-
+  
   body{
     font-family: 'Poppins', sans-serif;
     max-width: 100%;
     /* margin: 0 auto; */
     background-color: #121212;
     color: white;
+  }
+
+  /*** MODAL STYLE ***/
+
+  .contact-modal{
+    display: none;
+    position: fixed; 
+    z-index: 100; /* Sit on top */
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(19, 19, 19, 0.959); /* Black w/ opacity */
+  }
+
+  .contact-wrapper{
+     /* border: 1px solid rebeccapurple; */
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+    margin:  0 auto;
+    /* padding: 0px 10px 10px 10px; */
+     width: 25%;
+     height: auto;
+     background-color: white;
+  }
+
+   .info-wrapper{
+    color: white;
+    /* display: flex;
+    align-content: flex-start; */
+    background-color: #121212;
+    height: 100px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+
+  .fa-arrow-left{
+    cursor: pointer;
+  }
+  .fa-arrow-left:hover{
+    color: #ffdc6a;
+    transition: 0.5s;
+  }
+
+  .wrap{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 5px 0 5px;
+    height: auto;
+
+  }
+
+  .wrap h4{
+    font-size: 2em;
+    color: #FFE227;
+  }
+
+  .info-wrapper p{
+    margin-left: 40px;
+  }
+
+  /* .info-wrapper h4{
+    width: 800px;
+    height: 10%;
+    display: inline;
+  }  */
+
+
+  .contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px 10px 10px;
+    
+  }
+
+  input[type=email], select{
+    width: 450px;
+    padding: 10px 18px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: 'Inter';
+  }
+
+  input[type=text], select{
+    width: 450px;
+    padding: 10px 18px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: 'Inter';
+  }
+
+  .message-box{
+    width: 100%;
+    padding: 10px 18px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    resize: none;
+    box-sizing: border-box;
+    font-family: 'Inter';
+  }
+
+  input[type=submit], select{
+    width: 450px;
+    padding: 10px 18px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #121212;
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    background-color: #121212;
+    cursor: pointer;
+  }
+
+  input[type=reset], select{
+    width: 450px;
+    padding: 10px 18px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #121212;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    background-color: white;
+    cursor: pointer;
+  }
+
+  #contact-button-two{
+    width: 110px;
+    height: 30px;
+    color: #FFE227;
+    border: 1px solid #FFE227;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    background-color: #121212;
+    cursor: pointer;
+  }
+
+  #contact-button{
+    width: 110px;
+    height: 30px;
+    color: #FFE227;
+    border: 1px solid #FFE227;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    background-color: #121212;
+    cursor: pointer;
   }
 
   /*** HEADER STYLES ***/
@@ -64,3 +220,151 @@ header{
     display: none;
     visibility: hidden;
   }
+
+    /*** ARTIST ROSTER CONTAINER STYLES ***/
+
+  .artist-roster-container{
+    max-width: 100%;
+    margin: 5% auto;
+    /* border: 1px solid red; */
+    padding: 0 10%;
+    height: 100%;
+    position: relative;
+  }
+
+  .artist-roster-wrapper{
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 60px;
+      justify-content: center;
+  }
+
+  figcaption{
+      text-align: center;
+      margin-bottom: 10%;
+  }
+
+  img:hover{
+      cursor: pointer;
+      background-color: #121212ee;
+      transition: 0.5s;
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 479px) {
+    
+    .nav-container{
+      padding: 0 24px;
+      justify-content: space-between  ;
+      align-items: flex-start;
+  
+    }
+
+    .nav-buttons{
+      visibility: hidden;
+      display: none;
+    }
+
+    /***HAMBURGER MENU*/
+  
+    .hamburg-menu{
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      width: 20%;
+      height: 80%;
+      justify-content: flex-end;
+      align-items: flex-end;
+  
+    }  
+    .hamburg-button{
+      width: 30px;
+      height: 4px;
+      background: -webkit-linear-gradient(#ffdc6a, #d39a1f, #ffdc67);
+  
+    }
+  
+    .hamburg-button:hover{
+      cursor: pointer;
+      background-color: #d39a1f;
+    }
+  
+
+    .menu-container{
+      position: absolute;
+      z-index: 100;
+      width: 100%;
+      height: 24vh;
+      color: white;
+      background-color:#121212;
+      visibility: hidden;  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+      .nav{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      list-style-type: none;
+      text-align: center;
+  
+    }
+    .nav li a{
+      text-decoration: none;
+      color: white;
+    }
+
+  
+  }
+
+    /** MOBILE DEVICES */
+
+    @media all and (max-width: 480px) { 
+      /**MODAL FORM**/
+    
+      .contact-modal{
+        overflow: scroll;
+      }
+    
+      .contact-wrapper{
+        width: 95%;
+    
+      }
+    .info-wrapper p{
+     font-size: 12px;
+    }
+    
+      input[type=text], select{
+        max-width: 100%;
+      }
+    
+      input[type=email], select{
+        max-width: 100%;
+      }
+    
+      
+      input[type=submit], select{
+        max-width: 100%;
+    
+      }
+    
+        
+      input[type=reset], select{
+       max-width: 100%;
+    
+      }
+    
+      .button-wrapper{
+        width: 100%;
+        /* background-color: rebeccapurple; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .contact-form{
+        padding: 0 10px;
+      }

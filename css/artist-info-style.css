@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  
+  } 
+
+
+  body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+    /* position: relative; */
+    background-color: #121212;
+    color: white;
+
+  }
+
+  .bg-wrapper{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: 0;
+  }
+
+  /**CONTENT STYLE**/
+  .content-wrapper{
+
+      width: 100%; /* Need a specific value to work */
+      height: 100vh;
+      /* background-color: red; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 99;
+  }
+
+  .content-wrapper img{
+      margin-bottom: 25px;
+    
+  }
+
+  .artist-details{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+      list-style-type: none;
+  }
+
+  .header-wrapper{
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 50px;
+  }
+
+  .fa-solid{
+      color: white;
+      cursor: pointer;
+  }
+
+  .gold-font{
+    background: -webkit-linear-gradient(#fddc6e, #fcbd36, #ffe489);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: visible;
+    -webkit-line-box-contain: block glyphs replaced;
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 479px) {
+      .header-wrapper{
+          font-size: 12px;
+        margin-bottom: 25px;
+        margin-top: 50px;
+        align-items: center;
+          width: 100%;
+          padding: 0 2%;
+      }
+
+      .content-wrapper{
+          width: 100%;
+    
+      }
+  }

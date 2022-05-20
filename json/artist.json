@@ -1,23 +1,39 @@
 [
     {
-        "name": "Juan Dela Cruz",
+        "artistID": "0",
+        "name": "Mary Dela Cruz",
         "age": "25 years old",
         "birthday": "January 1, 1997",
         "socials": [
             "https://www.tiktok.com/",
             "https://www.youtube.com/",
             "https://www.facebook.com/"
-        ]
+        ],
+        "imgUrl": "../images/artist-image.png"
     },
     {
-        "name": "Mary Dela Cruz",
+        "artistID": "1",
+        "name": "Juan Dela Cruz",
         "age": "30 years old",
         "birthday": "January 1, 1992",
         "socials": [
             "https://www.tiktok.com/",
             "https://www.youtube.com/",
             "https://www.facebook.com/"
-        ]
+        ],
+        "imgUrl": "../images/artist-images/artist-one-image.png"
+    },
+    {
+        "artistID": "2",
+        "name": "Two Dela Cruz",
+        "age": "30 years old",
+        "birthday": "January 1, 1992",
+        "socials": [
+            "https://www.tiktok.com/",
+            "https://www.youtube.com/",
+            "https://www.facebook.com/"
+        ],
+        "imgUrl": "../images/artist-image-two.png"
     }
     
 ]
