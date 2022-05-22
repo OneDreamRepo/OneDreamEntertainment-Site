@@ -115,3 +115,55 @@ gsap.from(logo, {
   opacity: 0,
   ease: "circ.out",
 });
+
+const navigation = document.getElementById("nav-menu");
+
+console.log(navigation);
+
+gsap.from(navigation.children, {
+  y: -500,
+  delay: 0.3,
+  duration: 1,
+  opacity: 0,
+  ease: "circ.out",
+});
+
+const heroText = document.querySelector(".hero-text-container");
+const headerText = document.getElementsByTagName("h1")[0];
+const paragraph = document.getElementsByTagName("p");
+const socmedLink = document.querySelector(".social-media-container");
+
+console.log(socmedLink);
+
+gsap.from(headerText.children[0], {
+  duration: 1.5,
+  scale: 0.1,
+  delay: 1.2,
+  x: -100,
+  opacity: 0,
+  ease: "circ.out",
+});
+
+gsap.from(headerText.children[1], {
+  duration: 1.5,
+  scale: 0.1,
+  delay: 1.6,
+  x: -100,
+  opacity: 0,
+  ease: "circ.out",
+});
+
+gsap.from(paragraph, {
+  duration: 0.5,
+  delay: 1.8,
+  y: -10,
+  opacity: 0,
+  ease: "circ.out",
+});
+gsap.from(socmedLink.children, {
+  duration: 0.5,
+  delay: 1.8,
+  y: -10,
+  opacity: 0,
+  ease: "circ.out",
+});

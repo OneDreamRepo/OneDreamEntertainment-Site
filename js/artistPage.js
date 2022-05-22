@@ -85,3 +85,46 @@ modalBackBtn.addEventListener(
   },
   false
 );
+
+//GSAP ANIMATIONS
+//GSAP ANIMATIONS
+//GSAP ANIMATIONS
+
+const body = document.getElementsByTagName("body")[0];
+
+gsap.from(body, {
+  y: -500,
+  duration: 1,
+  opacity: 0,
+  ease: "circ.out",
+});
+
+const logo = document.getElementById("logo-header");
+
+gsap.from(logo, {
+  y: -500,
+  delay: 0.3,
+  duration: 1,
+  opacity: 0,
+  ease: "circ.out",
+});
+
+const navigation = document.getElementById("nav-menu");
+
+console.log(navigation);
+
+gsap.from(navigation.children, {
+  y: -500,
+  delay: 0.3,
+  duration: 1,
+  opacity: 0,
+  ease: "circ.out",
+});
+
+const artistRoster = document.querySelector(".artist-roster-container");
+
+gsap.from(artistRoster.children, {
+  duration: 1,
+  opacity: 0,
+  y: -100,
+});

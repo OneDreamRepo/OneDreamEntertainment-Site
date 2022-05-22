@@ -7,3 +7,16 @@ backBtn.addEventListener(
   },
   false
 );
+
+//GSAP ANIMATIONS
+//GSAP ANIMATIONS
+//GSAP ANIMATIONS
+
+const body = document.getElementsByTagName("body")[0];
+
+gsap.from(body, {
+  y: -500,
+  duration: 1,
+  opacity: 0,
+  ease: "circ.out",
+});
